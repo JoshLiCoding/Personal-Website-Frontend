@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+.App {
+  font-family:'Source Code Pro', monospace;
+  padding-left: 5%;
+  padding-top: 2%;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.textbox {
+  width: 70%;
+  margin-right: 14%;
+  line-height: 1.5rem;
+}
+
+svg {
+  height: 2rem;
+  width: 2rem;
+  color: black;
+  margin-right: 1.5rem;
+}
+
+svg:hover {
+  color: red;
+}
+
+.heading {
+  font-size: 1.4rem;
+  margin-top: 3%;
+  text-decoration: underline;
+}
+
+.proj{
+  padding-top: 1rem;
+  width: 80%;
+  margin-left: 10%;
+  height: 12rem;
+  object-fit: scale-down;
+  display: block;
+}
+
+.ltext-proj{
+  font-size: 1.2rem;
+  color: black
+}
+
+.ltext-proj:hover{
+  color: red;
+}
+
+.stext-proj{
+  font-size: 0.9rem;
+  width: 80%;
+  margin-left: 10%;
+  overflow-wrap: break-word;
+  max-height: 3.7rem;
+  overflow: auto;
+}
+
+.end {
+  margin-top: 2%;
+  padding-bottom: 2%;
+}
