@@ -2,6 +2,7 @@ import './App.css';
 import { IoLogoLinkedin, IoLogoGithub, IoMdPerson } from 'react-icons/io';
 
 import pdf from './Assets/resume.pdf';
+import companythumbnail from './Assets/companythumbnail.png';
 import notzrthumbnail from './Assets/notzrthumbnail.png';
 import kanbanthumbnail from './Assets/kanbanthumbnail.png';
 import triethumbnail from './Assets/triethumbnail.png';
@@ -25,7 +26,7 @@ function App() {
       <p className='title'>Joshua Li </p>
       <div className='textbox'>
         <p className>
-          <span style={{ fontWeight: "bold" }}>Hey!</span> I am an incoming CS first-year at the University of Waterloo and a recent alumni of Upper Canada College. I am
+          <span style={{ fontWeight: "bold" }}>Hey!</span> I am a CS first-year at the University of Waterloo and a recent alumni of Upper Canada College. I am
           passionate about building impactful technologies through creative problem-solving, particularly using AI.
         </p>
         <p className>
@@ -49,6 +50,13 @@ function App() {
 
       <Box sx={{ flexGrow: 1, width: '90%', }}>
         <Grid container spacing={2}>
+        <Grid item xs={4}>
+            <Item>
+              <img src={companythumbnail} className='proj'></img>
+              <a href='https://github.com/JoshLiCoding/Company-Report' className='ltext-proj' target='_blank'>Company Report</a>
+              <p className='stext-proj'>A website that automatically provides information about companies using stock tickers</p>
+            </Item>
+          </Grid>
           <Grid item xs={4}>
             <Item>
               <img src={notzrthumbnail} className='proj'></img>
