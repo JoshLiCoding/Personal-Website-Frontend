@@ -8,13 +8,10 @@ function App() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch(
-      "http://personal-website-env.eba-cx9qpdfz.us-east-2.elasticbeanstalk.com/projects",
-      {
-        method: "GET",
-        mode: "cors",
-      }
-    )
+    fetch("https://joshlibackend.ca/projects", {
+      method: "GET",
+      mode: "cors",
+    })
       .then((res) => {
         //console.log(res);
         return res.json();
