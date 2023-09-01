@@ -3,10 +3,11 @@ A website that displays information about me as well as some of my past projects
 
 www.joshuali.ca
 
-Used React.js with Material UI
+This entire project uses the MERN Stack (MongoDB, Express.js, React.js, and Node.js). This frontend repository is programmed with React.js and Tailwind. The backend respository can be found [here](https://github.com/JoshLiCoding/Personal-Website-Backend) and describes an Express.js server hosted on AWS Elastic Beanstalk. That server fetches data from MongoDB Atlas with links that correspond to images stored on AWS S3.
 
 ## Description
 This website contains one main page that contains an about me, links to external resources (i.e. LinkedIn, GitHub, resume) and past projects
 
 ## Images
-![image](https://user-images.githubusercontent.com/43073270/175832823-a85275c9-25c8-42bf-8ec3-76c18a0c83c2.png)
+![image](https://github.com/JoshLiCoding/Personal-Website-Frontend/assets/43073270/d84cfd8a-dfd0-49fd-bdcb-43ed60641bbc)
+
