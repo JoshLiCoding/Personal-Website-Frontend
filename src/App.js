@@ -2,13 +2,13 @@ import "./App.css";
 import { IoLogoLinkedin, IoLogoGithub, IoMdPerson } from "react-icons/io";
 import { useState, useEffect } from "react";
 
-import pdf from "./Assets/resume.pdf";
+import pdf from "./assets/resume.pdf";
 
 function App() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch("https://joshlibackend.ca/projects", {
+    fetch("https://joshli-backend-32dad87846e1.herokuapp.com/projects", {
       method: "GET",
       mode: "cors",
     })
@@ -22,27 +22,23 @@ function App() {
   }, []);
 
   return (
-    <div className="mx-5">
-      <div className="text-5xl my-10">Joshua Li </div>
+    <div className="pt-20" style={{ marginLeft: "10%", marginRight: "10%" }}>
+      <div className="text-5xl my-10 w-fit bg-white">Joshua Li </div>
       <div>
         <div className="text-ml leading-loose">
-          <div className="text-2xl mb-3">Hey! 👋</div>
-          <p>
+          <div className="text-2xl mb-3 w-fit py-2 pl-2 pr-8 bg-lime-100 rounded">
+            Hey! 👋
+          </div>
+          <p className="w-fit bg-white">
             You can call me Josh.
-            <br></br>I am a second-year student at the University of Waterloo
-            studying Computer Science and an alumni of Upper Canada College. I
-            am passionate about building impactful technologies, specifically in
-            the areas of AI, distributed computing, and fintech.
-            <br></br>
-            Currently, I work as a developer @ CGI on cloud and
-            containerization. Previously, I facilitated web development during
-            my internship @ Pensieve (Silicon Valley-based startup). I have
-            programmed competitively and experimented with machine learning as
-            well.
-            <br></br>
-            In my free time, you can catch me rock climbing, biking around
-            toronto, or reading on philosophy.
-            <br></br>
+            <br />
+            I'm a second-year CS student at the University of Waterloo and an
+            alumni of Upper Canada College. I like to explore all things AI and
+            software whenever I have time.
+            <br />
+            Outside of work, you can catch me rock climbing, biking, or reading
+            on philosophy.
+            <br />
             You can find my LinkedIn, GitHub and Resume below:
           </p>
         </div>
@@ -61,8 +57,8 @@ function App() {
         </div>
       </div>
 
-      <div className="text-4xl my-10 text-center">Projects</div>
-      <p className="my-3">
+      <div className="text-4xl my-10 text-center w-fit bg-white">Projects</div>
+      <p className="my-3 w-fit bg-white">
         Click on "Website" to visit to the finished product or click anywhere
         else in the box to visit the GitHub/Devpost page.
       </p>
@@ -75,12 +71,12 @@ function App() {
               href={project.code_url}
               key={index}
               target="_blank"
-              className="p-2 border border-solid rounded border-black flex flex-1 flex-col justify-between"
+              className="p-2 border border-solid rounded hover:shadow-xl border-black flex flex-1 flex-col justify-between w-fit bg-white"
             >
               <div>
                 <div className="border border-solid rounded border-grey">
                   <img
-                    src={project.photo_url}
+                    src={process.env.PUBLIC_URL + "thumbnails/" + project.photo}
                     className="object-cover h-60 mx-auto"
                     loading="lazy"
                   />
@@ -132,10 +128,10 @@ function App() {
         })}
       </div>
 
-      <div className="text-ml my-8">
-        Feel free to reach out to me at <u>joshual2004.work@gmail.com</u>
+      <div className="text-ml my-8 w-fit bg-white">
+        Feel free to reach out to me!
         <br></br>
-        &copy; 2022 Joshua Li
+        &copy; 2024 Joshua Li
       </div>
     </div>
   );
