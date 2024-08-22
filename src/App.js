@@ -29,18 +29,18 @@ function App() {
           <div className="text-2xl mb-3 w-fit py-2 pl-2 pr-8 bg-lime-100 rounded">
             Hey! 👋
           </div>
-          <p className="w-fit bg-white">
-            You can call me Josh.
-            <br />
-            I'm a second-year CS student at the University of Waterloo and an
-            alumni of Upper Canada College. I like to explore all things AI and
-            software whenever I have time.
-            <br />
-            Outside of work, you can catch me rock climbing, biking, or reading
-            on philosophy.
-            <br />
-            You can find my LinkedIn, GitHub and Resume below:
-          </p>
+          <div className="w-fit leading-8 bg-white">
+            <p className="mb-2">
+              I'm a second-year CS student at the University of Waterloo and an
+              alumni of Upper Canada College. I like to explore all things
+              Computer Vision and ML when I have the time.
+            </p>
+            <p className="mb-2">
+              Outside of work, you can catch me reading, biking or travelling to
+              see my friends.
+            </p>
+            <p>You can find my LinkedIn, GitHub and Resume below:</p>
+          </div>
         </div>
         <div className="flex items-baseline mt-4 mb-6">
           <div className="space-x-6 flex">
@@ -58,10 +58,10 @@ function App() {
       </div>
 
       <div className="text-4xl my-10 text-center w-fit bg-white">Projects</div>
-      <p className="my-3 w-fit bg-white">
+      {/*<p className="my-3 w-fit bg-white">
         Click on "Website" to visit to the finished product or click anywhere
         else in the box to visit the GitHub/Devpost page.
-      </p>
+      </p> */}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full">
         {projects.map((project, index) => {
