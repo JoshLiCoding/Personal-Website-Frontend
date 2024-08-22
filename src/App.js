@@ -25,11 +25,11 @@ function App() {
     <div className="pt-20" style={{ marginLeft: "10%", marginRight: "10%" }}>
       <div className="text-5xl my-10 w-fit bg-white">Joshua Li </div>
       <div>
-        <div className="text-ml leading-loose">
+        <div className="text-ml">
           <div className="text-2xl mb-3 w-fit py-2 pl-2 pr-8 bg-lime-100 rounded">
             Hey! 👋
           </div>
-          <div className="w-fit leading-8 bg-white">
+          <div className="w-fit leading-6 bg-white">
             <p className="mb-2">
               I'm a second-year CS student at the University of Waterloo and an
               alumni of Upper Canada College. I like to explore all things
