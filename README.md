@@ -8,7 +8,7 @@ This entire project uses the MERN Stack (MongoDB, Express.js, React.js, and Node
 
 
 ## Description
-This website contains one main page that contains an about me, links to external resources (i.e. LinkedIn, GitHub, resume) and past projects
+This website contains one main page that contains an about me, links to external resources (i.e. LinkedIn, GitHub) and past projects
 
 ## Images
 ![image](https://github.com/JoshLiCoding/Personal-Website-Frontend/assets/43073270/a8287978-5774-42f6-bc95-5db147ed6daf)
