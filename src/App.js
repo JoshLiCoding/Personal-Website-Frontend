@@ -2,8 +2,6 @@ import "./App.css";
 import { IoLogoLinkedin, IoLogoGithub, IoMdPerson } from "react-icons/io";
 import { useState, useEffect } from "react";
 
-import pdf from "./assets/resume.pdf";
-
 function App() {
   const [projects, setProjects] = useState([]);
 
@@ -29,17 +27,17 @@ function App() {
           <div className="text-2xl mb-3 w-fit py-2 pl-2 pr-8 bg-lime-100 rounded">
             Hey! 👋
           </div>
-          <div className="w-fit leading-6 bg-white">
-            <p className="mb-2">
+          <div className="w-fit leading-8 bg-white">
+            <p className="my-3">
               I'm a second-year CS student at the University of Waterloo and an
               alumni of Upper Canada College. I like to explore all things
               Computer Vision and ML when I have the time.
             </p>
-            <p className="mb-2">
+            <p className="my-3">
               Outside of work, you can catch me reading, biking or travelling to
               see my friends.
             </p>
-            <p>You can find my LinkedIn, GitHub and Resume below:</p>
+            <p>You can find my LinkedIn and GitHub below:</p>
           </div>
         </div>
         <div className="flex items-baseline mt-4 mb-6">
@@ -49,9 +47,6 @@ function App() {
             </a>
             <a href={"https://github.com/JoshLiCoding"}>
               <IoLogoGithub />
-            </a>
-            <a href={pdf}>
-              <IoMdPerson />
             </a>
           </div>
         </div>
