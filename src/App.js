@@ -53,10 +53,6 @@ function App() {
       </div>
 
       <div className="text-4xl my-10 text-center w-fit bg-white">Projects</div>
-      {/*<p className="my-3 w-fit bg-white">
-        Click on "Website" to visit to the finished product or click anywhere
-        else in the box to visit the GitHub/Devpost page.
-      </p> */}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full">
         {projects.map((project, index) => {
@@ -112,9 +108,9 @@ function App() {
                       </svg>
                     </span>
                     <span className="absolute flex items-center justify-center w-full h-full text-teal-500 transition-all duration-300 transform group-hover:translate-x-full ease">
-                      Website
+                      Demo
                     </span>
-                    <span className="relative invisible">Website</span>
+                    <span className="relative invisible">Demo</span>
                   </a>
                 </div>
               )}
