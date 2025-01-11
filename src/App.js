@@ -29,7 +29,7 @@ function App() {
           </div>
           <div className="w-fit leading-8 bg-white">
             <p className="my-3">
-              I'm a second-year CS student at the University of Waterloo and an
+              I'm a third-year CS student at the University of Waterloo and an
               alumni of Upper Canada College. I like to explore all things
               Computer Vision and ML when I have the time.
             </p>
